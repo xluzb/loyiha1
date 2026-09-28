@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#065f46" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  
+  <!-- Rounded Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Decorative subtle circle -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="4" stroke-dasharray="8 8" />
+
+  <!-- Main Content Shield / Emblem -->
+  <g filter="url(#glow)">
+    <!-- Stylized Modern House / Vault Frame -->
+    <path d="M256 100 L380 200 L340 200 L340 370 Q340 390 320 390 L192 390 Q172 390 172 370 L172 200 L132 200 Z" 
+          fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.4)" stroke-width="8" stroke-linejoin="round" />
+    
+    <!-- Rising Bar Chart & Growth Arrow inside -->
+    <rect x="200" y="290" width="24" height="65" rx="6" fill="#6ee7b7" />
+    <rect x="236" y="250" width="24" height="105" rx="6" fill="#34d399" />
+    <rect x="272" y="210" width="24" height="145" rx="6" fill="#10b981" />
+    <rect x="308" y="170" width="24" height="185" rx="6" fill="#059669" />
+
+    <!-- Dynamic Trend Arrow -->
+    <path d="M190 270 L240 230 L275 250 L330 155" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M305 155 L330 155 L330 180" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Center Currency Node -->
+    <circle cx="256" cy="330" r="18" fill="#ffffff" />
+    <text x="256" y="337" font-family="system-ui, sans-serif" font-size="20" font-weight="900" fill="#065f46" text-anchor="middle">S</text>
+  </g>
+</svg>

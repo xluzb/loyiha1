@@ -1,0 +1,8 @@
+{
+  "name": " Oila Budjet",
+  "description": "Oilaviy daromad, xarajatlar va kreditlarni aqlli boshqarish hamda moliyaviy barqarorlikka erishish uchun mo‘ljallangan PWA platformasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
