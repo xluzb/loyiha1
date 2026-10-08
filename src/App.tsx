@@ -419,6 +419,7 @@ export default function App() {
               expenses={data.expenses}
               categories={data.expenseCategories}
               goals={data.savingsGoals}
+              utilities={data.utilities}
               currency={data.userSettings.currency}
             />
           )}

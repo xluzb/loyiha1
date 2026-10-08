@@ -257,3 +257,38 @@ export interface BudgetRecommendationResult {
   warningAlert?: string;
   summaryText: string;
 }
+
+export interface CategoryForecastItem {
+  categoryId: string;
+  categoryName: string;
+  predictedAmount: number;
+  pastAverageAmount: number;
+  budgetLimit: number;
+  changePercentage: number;
+  riskLevel: 'low' | 'medium' | 'high';
+  rationale: string;
+}
+
+export interface ExpenseForecastReport {
+  targetMonth: string; // e.g. "Oktyabr 2026"
+  predictedTotalExpenses: number;
+  pastMonthsAverage: number;
+  predictedVariableExpenses: number;
+  fixedObligationsTotal: number;
+  projectedSavings: number;
+  projectedSavingsRate: number;
+  trendComparison: {
+    percentChange: number;
+    direction: 'up' | 'down' | 'flat';
+    summary: string;
+  };
+  categoryBreakdown: CategoryForecastItem[];
+  seasonalInsights: string[];
+  actionableRecommendations: string[];
+  summaryNarrative: string;
+  historicalMonths: Array<{
+    month: string;
+    monthName: string;
+    total: number;
+  }>;
+}
